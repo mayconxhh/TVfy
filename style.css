@@ -1,0 +1,148 @@
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-color: #bdc3c7;
+	font-family: 'Roboto';
+}
+
+#app-container{
+	width: 100%;
+	overflow: hidden;
+}
+
+#app-header{
+	width: 100%;
+	height: 10vh;
+	position: fixed;
+	text-align: center;
+	background-color: #2ecc71;
+}
+
+#app-header h1{
+	line-height: 10vh;
+	color: white;
+	margin: 0;
+}
+
+#app-body {
+	padding-top: 15vh;
+	width: 80%;
+	margin:  0 auto;
+	min-height: 75vh;
+}
+
+#app-footer {
+	width: 100%;
+	min-height: 10vh;
+}
+
+#app-footer p{
+	margin: 0 auto;
+	width: 40%;
+	text-align: center;
+	padding-top: 30px;
+	border-top: 1px solid #7f8c8d;
+}
+
+.tv-show{
+	width: 100%;
+	overflow: hidden;
+	padding: 16px;
+	background-color: white;
+	margin-bottom: 16px;
+}
+
+.tv-show:hover{
+	background-color: #ecf0f1;
+}
+.tv-show img {
+  /*max-height: 60px;*/
+	width: 100%;
+  	/*max-width: 140px;*/
+}
+
+.tv-show .info {
+	box-sizing: border-box;
+	max-width: 865px;
+	display: inline-block;
+  padding-left: 20px;
+  float: right;
+  width: 100%;
+}
+
+.left {
+	box-sizing: border-box;
+	display: inline-block;
+  width: 100%;
+	max-width: 210px;
+  float: left;
+}
+
+#app-body .search-form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+#app-body .search-form input[type="text"] {
+  padding: 8px;
+  font-size: 1.2em;
+  border-radius: 6px;
+  width: 300px;
+  border: none;
+}
+
+#app-body .search-form button[type="submit"] {
+	background-color: crimson;
+	color: white;
+	border: none;
+	padding: 8px;
+	font-size: 1.2em;
+	border-radius: 5px
+}
